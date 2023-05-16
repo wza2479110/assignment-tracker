@@ -17,7 +17,7 @@ export function Assignments() {
       </header>
 
       <div className={styles.list}>
-        <Assignment />
+        <Assignment title="My Assignment Title" />
       </div>
     </section>
   );

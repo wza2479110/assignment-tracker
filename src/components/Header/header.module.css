@@ -48,5 +48,22 @@
 }
 
 .newAssignmentForm button:disabled {
-  background: red;
+  background: grey;
+}
+
+.disabled {
+  pointer-events: none; /* Disables pointer events on the form when disabled */
+  opacity: 0.5; /* Makes the form appear grayed out */
+}
+
+.disabled button {
+  cursor: not-allowed; /* Changes the cursor to "not-allowed" when disabled */
+}
+
+input:disabled {
+  cursor: not-allowed; /* Changes the cursor to "not-allowed" when the input is disabled */
+}
+
+button:disabled:hover {
+  cursor: default; /* Changes the cursor to the default cursor when hovering over the disabled button */
 }
